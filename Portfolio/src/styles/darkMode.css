@@ -1,0 +1,91 @@
+@layer utilities {
+  .dark {
+    --bg-color: #1a1a1a;
+    --text-color: #e5e5e5;
+    --secondary-bg: #2d2d2d;
+    --accent-bg: #333333;
+    --border-color: #404040;
+  }
+
+  .dark body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+
+  .dark .bg-white {
+    background-color: var(--bg-color);
+    border-color: var(--border-color);
+  }
+
+  .dark .text-gray-900 {
+    color: var(--text-color);
+  }
+
+  .dark .text-gray-700 {
+    color: #d1d5db;
+  }
+
+  .dark .text-gray-600 {
+    color: #9ca3af;
+  }
+
+  .dark .bg-accent {
+    background-color: var(--accent-bg);
+  }
+
+  .dark .navbar-scrolled {
+    background-color: var(--bg-color);
+    background-opacity: 0.95;
+  }
+
+  .dark .project-card {
+    background-color: var(--secondary-bg);
+    border: 1px solid var(--border-color);
+  }
+
+  .dark .skill-bar {
+    background-color: var(--border-color);
+  }
+
+  .dark .card-hover:hover {
+    box-shadow: 0 10px 25px rgba(52, 199, 89, 0.1);
+  }
+
+  /* Form inputs in dark mode */
+  .dark input,
+  .dark textarea {
+    background-color: var(--secondary-bg);
+    border-color: var(--border-color);
+    color: var(--text-color);
+  }
+
+  .dark input:focus,
+  .dark textarea:focus {
+    border-color: #34C759;
+    outline: none;
+  }
+
+  /* Navigation */
+  .dark .nav-link {
+    color: #d1d5db;
+  }
+
+  .dark .nav-link:hover {
+    color: #34C759;
+  }
+
+  /* Buttons */
+  .dark .bg-secondary {
+    background-color: var(--secondary-bg);
+  }
+
+  .dark .bg-white {
+    background-color: var(--secondary-bg);
+  }
+
+  /* Mobile menu */
+  .dark .mobile-menu {
+    background-color: var(--bg-color);
+    border-color: var(--border-color);
+  }
+}
